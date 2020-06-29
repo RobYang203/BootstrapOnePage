@@ -1,0 +1,372 @@
+html ,body{
+    scroll-behavior: smooth;
+    
+}
+header{
+    padding: 5rem;
+    background: #c0bdc0;
+    color: #FFF;
+    font-size: 5rem;
+}
+
+nav{
+    position: sticky;
+    top:0px;
+    z-index: 10;
+    background: #c0bdc0;
+    transition: ease-in all .5s;
+}
+nav.sticky{
+    background:#000;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+nav li{
+    flex: 1;
+    color:white;
+    text-align: center;
+    padding: 20px;
+}
+nav li > a:visited{
+    color: white;
+}
+article{
+    /* text-align: center; */
+    /* padding: 2rem 10rem; */
+    scroll-behavior: smooth;
+}
+section{
+    padding:  5rem;
+    border: 1px solid #c3c3c3;
+    position: relative;
+}
+section .title{
+    font-size: 3em;
+    font-weight: 300;
+}
+
+section .separe-line{
+    display: inline-block;
+   
+    border: 1px solid rgb(218, 113, 113);
+    height: 1px;
+    margin: 5px 0;
+}
+.separe-line.lg{
+    width: 150px;
+}
+.separe-line.sm{
+    width: 50px;
+}
+
+section p {
+    font-weight: 100;
+    padding: 10px 0;
+}
+.rowContent{
+    padding: 2rem;
+}
+.btn{
+    color: #FFF !important;
+}
+.collapseBox{
+    margin: 5px 0; 
+}
+
+.collapseBox-header{
+    padding: 0;
+    box-shadow: #c0bdc0 0px 0px 2px 0px;
+    border-radius: 5px;
+}
+.collapseBox input[type=radio]{
+    display: none;
+}
+
+.collapseBox label{
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    font-weight: 100;
+    margin: 0;
+    /* padding: .5rem; */
+}
+.btnIcon-area{
+    display: inline-block;
+    padding: 20px;
+    background: #dddcdd;
+    margin-right: 20px;
+}
+.btnIcon-area i{
+    transition: linear all .5s;
+    display: inline-block;
+}
+.collapseBox input[type=radio]:checked+label .btnIcon-area{
+    background: #000;
+    color:#FFF
+}
+.collapseBox input[type=radio]:checked+label .btnIcon-area i{
+   transform: rotate(90deg);
+}
+
+.collapseBox-body{
+    box-shadow: #c0bdc0 0px 0px 2px 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: -1px;
+    padding: 25px;
+}
+.iconArea{
+    margin:5px 0 10px 0;
+}
+.cycleIcon{
+    display: inline-block;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #f16422;
+    box-shadow: #f8b292 0px 0px 1px 5px;
+    color:white;
+    line-height: 80px;
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+.info-content{
+    padding: 10px 0;
+    font-weight: 100;
+}
+.introduction{
+    text-align: center;
+    margin: 5px 0 45px 0;
+}
+.introduction p{
+    font-weight: 100;
+}
+
+.bigIcon{
+    font-size: 3em;
+    padding: 0 10px;
+    color: #a4a4a5;
+}
+.overlay{
+    background-color: rgba(51, 51, 51, 0.30);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.Impressed{
+    text-align: center;
+    color: white;
+    background: #757475;
+}
+
+
+.teamskillbar{
+    margin: 5px 0;
+    position: relative;
+    height: 50px;
+}
+.teamskillbar h6{
+    padding: 5px 0;
+    font-weight: 100;
+}
+.teamskillbar::after{
+    content:'';
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    background: #c0bdc0;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
+.teamskillbar-bar{
+    display: inline-block;
+    height: 10px;
+    background: aliceblue;
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+}
+
+.Pricing{
+    background: #ece7e7;
+}
+.pricing-card{
+    text-align: center;
+    height: 500px;
+    margin: 20px 0;
+}
+.pricing-card.active{
+    border-top: 3px solid #f16422;
+}
+.pricing-card .card-header{
+    height: 33.33%;
+}
+.pricing-card .card-header h2{
+    font-weight: 300;
+}
+.pricing-card .card-body{
+    padding: 65px 0 0 0;
+}
+.price-money{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border:1px solid #FFF;
+    box-shadow: #f16422 0px 0px 0px 10px ;
+    background: #f16422;
+    color: #FFF;
+    top:calc(33.33% - 60px);
+    left: calc(50% - 60px);
+}
+
+.price-money::after{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.price-money-content{
+    vertical-align: middle;
+    display: inline-block;
+}
+.price-money-content .money{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.price-ruleList{
+    margin: 20px 0 30px 0;
+    list-style: none;
+    text-align: left;
+}
+.price-ruleList li{
+    padding: 10px;
+}
+
+.portfolio_item{
+    background: #ece7e7;
+    position: relative;
+    color:white;
+    margin: 10px 0;
+}
+.portfolio_item img{
+    width: 100%;
+}
+.portfolio_item:hover .mask_item{
+
+    opacity: 1;
+}
+.mask_item{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #a19fa1cc;
+    transition: ease-in-out all .5s;
+    opacity: 0;
+}
+.mask_content{
+    vertical-align: middle;
+    display: inline-block;
+}
+.mask_item::after{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+.mask_content .mask{
+    margin: 10px 0;
+}
+.mask_content .button_group a{
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+}
+
+.mask_content .button_group a:visited{
+    color: white;
+}
+.sliderBox{
+    text-align: center;
+
+}
+.sliderInfo{
+    width: 93%;
+    margin: 10px;
+    padding: 0 25px;
+    display: inline-block;
+}
+.sliderInfo .sItem{
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+    padding: 10px;
+}
+.sliderInfo .sItem .content{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+.Testimonials{
+    background: url(https://bootstrapthemes.co/demo/html/rage-digital-agency-bootstrap4-free-template/assets/images/background/testimonial.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color:white;
+}
+
+.btn-arrow-basic{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    color: #FFF !important;
+    text-align: center;
+    line-height: 47px;
+    font-size: 1.3em;
+    position: absolute;
+    top:10px
+}
+.btn-arrow-basic:hover{
+    background: #FFF;
+    color: #000 !important;
+}
+.btn-arrow-basic:active{
+    background: rgb(165, 164, 164);
+    color: #000 !important;
+}
+
+.arrow-next{
+    right:-25px;
+}
+.arrow-pre{
+    left: -25px;
+}
+
+@media only screen and (max-width: 568px){
+    section{
+        padding: 20px 10px;
+        border: 0
+    }
+}
